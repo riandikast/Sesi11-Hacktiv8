@@ -163,7 +163,7 @@ function Form() {
                 />
               </div>
 
-              <div className="text-white">
+              <div className="text-white ">
                 <label> Penulis </label>
                 <input
                   className="text-black p-1"
@@ -186,7 +186,7 @@ function Form() {
             <div className=" w-80 space-x-4 text-white ml-40">
               {Number(count) > 0 && (
                 <>
-                  <div className="flex space-x-28">
+                  <div className="flex space-x-32">
                     <div className="w-20 ml-3">Judul Buku</div>
 
                     <div className="">Penulis</div>
