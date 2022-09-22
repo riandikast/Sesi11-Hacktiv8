@@ -19,7 +19,9 @@ function PostItem() {
   const [buttonState, setButtonState] = useState(buttonData);
 
   const getPost = useSelector((state) => state.post.entities);
-
+  const handleDetail =(id)=> {
+    navigation(`/${id}`)
+    localStorage.setItem("state", JSON.stringify(1))} 
   const dispatch = useDispatch();
   const showData = () => {
     dispatch(fetchData());
@@ -66,7 +68,7 @@ function PostItem() {
                 <td className=" px-1 py-3"> Title : {post.title} </td>
 
                 <button
-                  onClick={() => navigation(`/${post.id}`) && window.reload()}
+                  onClick={()=> handleDetail(post.id)}
                   className="mr-4  bg-github-darker-grey hover:bg-github-border  text-github-another-grey font-bold  w-20 h-6 rounded-lg"
                 >
                   Detail
