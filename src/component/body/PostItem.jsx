@@ -19,10 +19,13 @@ function PostItem() {
   const [buttonState, setButtonState] = useState(buttonData);
 
   const getPost = useSelector((state) => state.post.entities);
+
   const handleDetail =(id)=> {
     navigation(`/${id}`)
-    localStorage.setItem("state", JSON.stringify(1))} 
+    localStorage.setItem("state", JSON.stringify([]))} 
+
   const dispatch = useDispatch();
+  
   const showData = () => {
     dispatch(fetchData());
     setLoading(true);
@@ -34,7 +37,8 @@ function PostItem() {
   };
 
   useEffect(() => {
-    localStorage.setItem("state", JSON.stringify([]));
+    localStorage.setItem("state", JSON.stringify(1));
+   
   }, []);
 
   const navigation = useNavigate();
@@ -45,7 +49,7 @@ function PostItem() {
         <div className="h-96 mb-96 mt-60 w-0"></div>
 
         <div className="text-white ml-4 mt-8">
-          {!loading && buttonState.length === 0 && (
+          { buttonState === 1 && (
             <>
               {" "}
               {showButton ? (
