@@ -24,7 +24,7 @@ export const postSlice = createSlice({
     })
     builder.addCase(fetchData.pending, (state, action) => {
       state.loading = true
-      alert('Ceritanya Loading');
+    
     })
     builder.addCase(fetchData.rejected, (state, action) => {
       state.loading = false
