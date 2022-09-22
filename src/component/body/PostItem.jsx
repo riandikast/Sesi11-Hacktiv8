@@ -26,7 +26,9 @@ function PostItem() {
         <div className="h-96 mb-96 mt-60 w-0"></div>
       
         <div className="text-white ml-4 mt-8">
-        <button onClick={showData} className="text-white mb-10">Show Data</button>
+     
+          <button onClick={showData} className="text-white mb-10">Show Data</button>
+        
         {loading ? (
         <div className="text-white">
       	  <div className="">Sedang Loading</div>
