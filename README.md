@@ -1,4 +1,10 @@
 # Preview 
+<img width="712" alt="image" src="https://user-images.githubusercontent.com/84719581/191801598-8752da33-0bf3-45da-9850-9eb30fd9d0ff.png">
+
+<img width="828" alt="image" src="https://user-images.githubusercontent.com/84719581/191801635-ff1934be-9534-4fc5-9ca8-11ad914d4537.png">
+
+<img width="812" alt="image" src="https://user-images.githubusercontent.com/84719581/191801668-bc9810c2-9f26-46c7-82de-a4a5a9f76dac.png">
+
     
 
 # Getting Started with Create React App
