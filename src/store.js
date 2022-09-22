@@ -1,10 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit'
-import counterReducer from './features/counter/counterSlice'
-import booksCRUD from './features/booksCRUD'
 
+import postReducer from './features/postSlice';
+import logger from 'redux-logger'
 export default configureStore({
   reducer: {
-    counter: counterReducer,
-    books: booksCRUD,
+ 
+    post: postReducer,
+  
   },
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger)
 })
