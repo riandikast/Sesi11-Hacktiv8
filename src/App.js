@@ -9,9 +9,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Post></Post>} />
 
-        <Route path="/:id" element={<PostDetailPages></PostDetailPages>}>
-     
-        </Route>
+        <Route
+          path="/:id"
+          element={<PostDetailPages></PostDetailPages>}
+        ></Route>
       </Routes>
     </div>
   );
